@@ -1,0 +1,243 @@
+.leaflet-touch .leaflet-bar a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #00b56c;
+}
+/* img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -0.5vw;
+} */
+.leaflet-marker-icon.custom-icon.leaflet-zoom-animated.leaflet-interactive {
+  margin-top: -45px !important;
+}
+#btn_left_margin {
+  display: flex;
+  justify-content: center;
+  /* margin-left: -1%; */
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(227, 224, 224);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #29303b;
+  border-radius: 7px;
+}
+
+input[type="checkbox"]:hover {
+  outline: 1px auto #00b56c;
+  cursor: pointer;
+}
+
+#scroll_side_bar {
+  height: 82vh;
+  /* Dynamic height calculation */
+  overflow-y: auto;
+  /* Add a vertical scrollbar if content exceeds the container height */
+  border: 1px solid #ccc;
+  /* Optional: Add a border for visual clarity */
+  padding: 10px;
+}
+
+#maps {
+  height: 93vh;
+  /* Dynamic height calculation */
+  /* overflow-y: auto; Add a vertical scrollbar if content exceeds the container height */
+  /* border: 1px solid #ccc; /Optional: Add a border for visual clarity */
+  padding: 10px;
+}
+
+.search_live_tracking {
+  height: 5vh;
+}
+
+.vehicle_summary {
+  height: 6vh;
+}
+
+.main_sider_bar {
+  height: 93vh;
+}
+@media (max-width: 1800px) and (min-width: 1570px) {
+  .main_sider_bar {
+    grid-column: 2 span;
+    width: 59%;
+  }
+  .main_map {
+    grid-column: 3 span;
+    margin-left: -27%;
+  }
+}
+
+@media (max-width: 1571px) and (min-width: 1300px) {
+  .main_sider_bar {
+    grid-column: 2 span;
+    width: 68%;
+  }
+  .show_vehicle_left {
+    grid-column: 7 span !important;
+  }
+  .search_vehicle_live_tracking {
+    grid-column: 5 span;
+  }
+  .main_map {
+    grid-column: 3 span;
+    margin-left: -21%;
+  }
+  #maps {
+    height: 92vh;
+    overflow: hidden;
+  }
+  .main_sider_bar {
+    height: 92vh !important;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1301px) and (min-width: 1199px) {
+  .main_sider_bar {
+    grid-column: 2 span;
+    width: 74%;
+  }
+
+  .main_sider_bar {
+    height: 92vh !important;
+    overflow: hidden;
+  }
+  #maps {
+    height: 92vh;
+    overflow: hidden;
+  }
+  .search_live_tracking {
+    height: 7vh !important;
+  }
+  .main_map {
+    grid-column: 3 span;
+    margin-left: -17%;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1050px) {
+  .main_sider_bar {
+    grid-column: 2 span;
+    width: 90%;
+  }
+  .main_map {
+    grid-column: 3 span;
+    margin-left: -7%;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1050px) and (max-height: 900px) and (min-height: 300px) {
+  .search_live_tracking {
+    height: 10vh;
+  }
+}
+@media (max-width: 1049px) and (min-width: 900px) {
+  .search_live_tracking {
+    height: 4vh !important;
+  }
+}
+@media (max-width: 1049px) and (min-width: 900px) and (max-height: 900px) {
+  .search_live_tracking {
+    height: 8vh !important;
+  }
+}
+@media (max-width: 901px) and (min-width: 766px) {
+  .search_live_tracking {
+    height: 5vh;
+  }
+}
+@media (max-width: 768px) and (min-width: 643px) {
+  .main_sider_bar {
+    grid-column: 3 span !important;
+    width: 80%;
+  }
+  .main_map {
+    grid-column: 2 span;
+    margin-left: -5.3rem;
+  }
+  .status_car_btn {
+    grid-column: 4 span;
+  }
+  .main_sider_bar {
+    height: 85vh !important;
+    overflow: hidden;
+  }
+  #scroll_side_bar {
+    height: 74vh;
+    /* Dynamic height calculation */
+    overflow-y: auto;
+  }
+  #maps {
+    height: 85vh !important;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 634px) and (min-width: 319px) {
+  .vehicle_summary {
+    height: 7vh !important;
+  }
+  #btn_left_margin {
+    display: flex;
+    justify-content: center;
+    margin-left: -5%;
+  }
+  .search_live_tracking {
+    display: flex !important;
+    align-items: center !important;
+    height: 7vh !important;
+  }
+  .main_sider_bar {
+    height: 40vh;
+  }
+  #scroll_side_bar {
+    height: 20vh;
+    overflow-y: scroll;
+  }
+  .search_live_tracking {
+    height: 6.7vh;
+  }
+  .vehicle_summary {
+    height: 7.5vh;
+  }
+  #maps {
+    margin-top: -10%;
+    height: 48vh;
+  }
+}
+@media (max-width: 320px) {
+  .vehicle_summary {
+    height: 10vh !important;
+  }
+  #btn_left_margin {
+    display: flex;
+    justify-content: center;
+    margin-left: -5% !important;
+  }
+  .search_live_tracking {
+    display: flex !important;
+    align-items: center !important;
+    height: 10vh !important;
+  }
+  .main_sider_bar {
+    height: 40vh;
+  }
+  #scroll_side_bar {
+    height: 30vh !important;
+  }
+  .search_live_tracking {
+    height: 6.7vh;
+  }
+  .vehicle_summary {
+    height: 7.5vh;
+  }
+  #maps {
+    height: 42vh;
+    margin-top: 10%;
+  }
+}
+.leaflet-marker-icon.custom-icon.leaflet-zoom-animated.leaflet-interactive {
+  margin-top: -25px !important;
+}
